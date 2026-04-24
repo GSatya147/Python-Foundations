@@ -56,3 +56,6 @@ print(os.getcwd()) # to get present working directory
 
 # To know the location of a module, for furhter exploration
 print(os.__file__)
+
+# To knwo all the methods, funcs in a module
+print(dir(os))
