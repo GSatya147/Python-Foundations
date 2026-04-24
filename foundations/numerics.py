@@ -30,6 +30,13 @@ greater than: >, >=
 less than: <, <=
 """
 
+# logical operators
+"""
+and 
+or 
+not
+"""
+
 # abs 
 abs(-3) == 3
 round(3.75) == 4
