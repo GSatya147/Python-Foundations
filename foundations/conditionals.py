@@ -13,3 +13,12 @@ a = b # copy
 a is b # true
 id(a) is id(b) # true 
 
+# falsy values in conditionals
+"""
+False
+None
+Zero - 0
+Any empty seq - '', (), []
+Any empty mapping - {}
+"""
+
