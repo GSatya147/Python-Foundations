@@ -78,18 +78,18 @@ emp1.set_raise(1.5)
 emp_string = 'Joe-Doe-7000'
 first, last, pay = emp_string.split('-')
 
-emp3 = Employee(first, last, pay)
-print(emp3.fullname)
+emp3 = Employee(first, last, int(pay))
+print(emp3.fullname())
 
 # Class method: Alternative constructor
 # don't forget to return the instance, don't be like claude dumbahh..haha
 new_emp = Employee.auto_create(emp_string)
-print(new_emp.fullname)
+print(new_emp.fullname())
 
 # ----------------------------------------------------------------------------------------------
 # Static methods - magic, don't need any prerequisited args
 import datetime
 
-my_date = datetime.date(2026, 04, 25)
+my_date = datetime.date(2026, 4, 25)
 
 print(Employee.is_workday(my_date))
