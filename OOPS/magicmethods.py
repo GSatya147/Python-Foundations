@@ -10,7 +10,7 @@ class Employee:
 
         Employee.num_of_emps += 1 
 
-    def fullname(self): # A class method
+    def fullname(self): 
         return '{} {}'.format(self.fname, self.lname)
     
     def apply_raise(self):
