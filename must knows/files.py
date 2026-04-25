@@ -54,7 +54,7 @@ with open('test.txt', 'r') as f:
         f.seek(0) # sets pointer to 0th pos
         f_contents = f.read(10) # reads first 10 chars again
     else:
-        f.contents = f.read(10) # reads next 10, i.e. 11 to 20
+        f_contents = f.read(10) # reads next 10, i.e. 11 to 20
 
 # ------------------------------------------------------------------------------------------------------------------------------------------------------
 # WRITE MODE - creates if not present
@@ -88,5 +88,5 @@ with open('test.txt', 'w') as wf:
             rf_chunk = rf.read(chunk_size) # reads 4KBs of test.jpg
 
             while len(rf.chunk) > 0:
-                wf.write(rf) # writes 4KBs to test2.jpg
+                wf.write(rf_chunk) # writes 4KBs to test2.jpg
                 rf_chunk = rf.read(chunk_size) # to read next chunk, else while is gonna be an infinite loop checking same size 
