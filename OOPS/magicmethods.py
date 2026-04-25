@@ -33,12 +33,12 @@ emp2 = Employee('Veera', 'Gann', 34000)
 
 # These are same
 print(emp1)
-print(emp1.__str__)
+print(emp1.__str__())
 print(str(emp1))
 
 # These are same
 print(repr(emp1))
-print(emp1.__repr__)
+print(emp1.__repr__())
 print(emp1) # repr is used only if str is absent
 
 # ---------------------------------------------------------------------------------------------------------------
@@ -52,7 +52,7 @@ print(str.__add__('hi', 'world'))
 
 # eg - 2
 print(len('test')) # 4
-print('test'.__len__) # 4
+print('test'.__len__()) # 4
 
 # Hence we can add an dunder add method to add our custom objs
 print(emp1 + emp2) # Here emp1 goes to self and emp2 goes to other
