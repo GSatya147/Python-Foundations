@@ -8,7 +8,7 @@ try:
 except FileNotFoundError as e: # specific exception at top
     print(e)
 
-except Exception as e:
+except Exception as e: # more generic exceotion at bottom
     print(e)
 
 else: # runs only if try doesn't raise any excepitons
