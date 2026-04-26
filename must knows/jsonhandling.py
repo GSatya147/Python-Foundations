@@ -31,6 +31,7 @@ print(json.dumps(dict, indent = 4, separators = (".", "=")))
 with open("data.json", "w") as f:
     json.dump(dict, f, indent = 2)
 
+# --------------------------------------------------------------------------
 # read from file
 with open('data.json', 'r') as f:
     loaded = json.load(f)
