@@ -25,7 +25,7 @@ python objs -> JSON equivalents (js)
 print(json.dumps(dict, indent = 4))
 
 # to change default separator
-json.dumps(dict, indent = 4, seperators = (".", "="))
+print(json.dumps(dict, indent = 4, separators = (".", "=")))
 
 # write to a file
 with open("data.json", "w") as f:
